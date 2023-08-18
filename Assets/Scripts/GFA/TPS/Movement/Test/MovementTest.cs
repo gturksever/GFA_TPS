@@ -50,7 +50,9 @@ namespace GFA.TPS.Movement.Tests
         {          
             
             var input = _gameInput.Player.Movement.ReadValue<Vector2>();
+
             _characaMovement.MovementInput = input;
+            _characaMovement.Rotation += Time.deltaTime*10;
         }
     }
 
