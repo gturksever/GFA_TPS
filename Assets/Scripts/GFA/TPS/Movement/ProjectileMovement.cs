@@ -33,7 +33,7 @@ namespace GFA.TPS.Movement
         [SerializeField] private bool _shouldBounce;
         public bool ShouldBounce
         {
-            get=> _shouldBounce;
+            get => _shouldBounce;
             set => _shouldBounce = value;
         }
 
@@ -43,7 +43,7 @@ namespace GFA.TPS.Movement
         {
             var direction = transform.forward;
             var distance = _speed * Time.deltaTime;
-            var targetPosition = transform.position + direction * _speed * Time.deltaTime;
+            var targetPosition = transform.position + direction * distance;
 
             if(Physics.Raycast(transform.position, direction, out var hit, distance)) 
             {

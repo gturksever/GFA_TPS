@@ -40,7 +40,7 @@ namespace GFA.TPS.Mediators
 
         private void OnDisable()
         {
-            _gameInput?.Disable();
+            _gameInput.Disable();
             _gameInput.Player.Dodge.performed -= OnDodgeRequested;
             _gameInput.Player.Shoot.performed -= OnShootRequested;
         }

@@ -8,6 +8,7 @@ namespace GFA.TPS
     public class Shooter : MonoBehaviour
     {
         [SerializeField] private float _fireRate = 0.1f;
+
         private float _lastShootTime;
 
         public bool CanShoot =>Time.time > _lastShootTime + _fireRate;
