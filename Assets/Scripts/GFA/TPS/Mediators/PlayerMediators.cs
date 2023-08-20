@@ -34,7 +34,7 @@ namespace GFA.TPS.Mediators
         {
             _gameInput.Enable(); //default olarak enable olmadýðý için enable etmemiz lazým
             _gameInput.Player.Dodge.performed += OnDodgeRequested;
-            _gameInput.Player.Shoot.performed += OnShootRequested;
+            
         }
 
 
@@ -80,6 +80,10 @@ namespace GFA.TPS.Mediators
                     _characterMovement.Rotation = angle;
                 }
 
+            }
+            if (_gameInput.Player.Shoot.IsPressed())
+            {
+                _shooter.Shoot();
             }
             
             

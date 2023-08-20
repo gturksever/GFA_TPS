@@ -260,6 +260,8 @@ GameObject:
   m_Component:
   - component: {fileID: 32743300636275061}
   - component: {fileID: 8091835811434588208}
+  - component: {fileID: 3997492029524525369}
+  - component: {fileID: 803651447198489654}
   m_Layer: 0
   m_Name: ProjectTile
   m_TagString: Untagged
@@ -297,7 +299,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 250
+  _movementPlane: {x: 1, y: 0, z: 1}
   _shouldDestroyCollision: 0
   _shouldDisableCollision: 0
   _shouldBounce: 1
-  _pushPower: 0.05
+  _pushPower: 0.01
+--- !u!114 &3997492029524525369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638989770609843878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d139f6ba8ee084fa5a57b534bb5da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 1
+--- !u!114 &803651447198489654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638989770609843878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ee27a270deb9246b0726a94ab185b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _radius: 20
+  _ricochetCount: 5
+  removeOnComplete: 0
