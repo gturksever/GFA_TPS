@@ -303,7 +303,7 @@ MonoBehaviour:
   _shouldDestroyCollision: 0
   _shouldDisableCollision: 0
   _shouldBounce: 1
-  _pushPower: 0.01
+  _pushPower: 0.001
 --- !u!114 &3997492029524525369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ee27a270deb9246b0726a94ab185b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radius: 20
+  _radius: 10
   _ricochetCount: 5
   removeOnComplete: 0
